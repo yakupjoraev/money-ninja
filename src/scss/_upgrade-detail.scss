@@ -1,0 +1,226 @@
+.upgrade-detail {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  overflow: hidden;
+
+  .upgrade__list {
+    margin-bottom: 36px;
+
+    .upgrade__item-picture img {
+      width: 65px;
+      margin-right: 20px;
+    }
+  }
+
+  // .upgrade-detail__head
+
+  &__head {
+    position: relative;
+    z-index: 2;
+
+    .title {
+      font-size: 48px;
+      text-align: center;
+    }
+
+    &--mini {
+      display: flex;
+      flex-direction: column;
+      row-gap: 12px;
+      margin-bottom: 74px;
+
+      .title {
+        margin-bottom: 0;
+        font-size: 24px;
+      }
+
+      .text-grey {
+        text-align: center;
+        max-width: 240px;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  // .upgrade-detail__info
+
+  &__info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 4px;
+  }
+
+  // .upgrade-detail__text
+
+  &__text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 100%;
+    text-align: center;
+    color: var(--white-color);
+
+    &.red {
+      color: var(--red);
+    }
+  }
+
+  // .upgrade-detail__main
+
+  &__main {}
+
+  // .upgrade-detail__picture
+
+  &__picture {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+
+    &::before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 240px;
+      height: 240px;
+      border-radius: 100%;
+      background-color: var(--red);
+      filter: blur(100px);
+      user-select: none;
+      pointer-events: none;
+    }
+
+    img {
+      max-height: 220px;
+      object-fit: none;
+    }
+  }
+
+  // .upgrade-detail__footer
+
+  &__footer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    position: relative;
+    z-index: 2;
+  }
+
+  // .upgrade-detail__columns
+
+  &__columns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 10px;
+  }
+
+  // .upgrade-detail__wallet
+
+  &__wallet {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    border-radius: 5px;
+    background-color: var(--red);
+    width: fit-content;
+    padding: 3px 18px 3px 12px;
+    height: 28px;
+  }
+
+  // .upgrade-detail__wallet-sum
+
+  &__wallet-sum {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    text-align: center;
+    color: var(--white-color);
+  }
+
+  // .upgrade-detail__block
+
+  &__block {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    height: 28px;
+    width: fit-content;
+    padding: 3px 18px 3px 12px;
+    border-radius: 5px;
+    background-color: #3c3c3c;
+  }
+
+  // .upgrade-detail__block-text
+
+  &__block-text {}
+}
+
+.payment-type {
+  margin-right: auto;
+  margin-bottom: 20px;
+  min-height: 50dvh;
+  // .payment-type__radios
+
+  &__radios {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+
+  }
+
+  // .payment-type__radio
+
+  &__radio {}
+
+  // .payment-type__radio-input
+
+  &__radio-input {
+    width: 0;
+    height: 0;
+    position: absolute;
+    z-index: -100;
+    opacity: 0;
+
+    &:checked~.payment-type__radio-label {
+      .payment-type__radio-decor {
+        background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='15' cy='15' r='14.5' fill='white' stroke='%23ED1C24' /%3E%3Ccircle cx='15' cy='15.2844' r='5' fill='%23ED1C24' /%3E%3C/svg%3E");
+      }
+    }
+  }
+
+  // .payment-type__radio-label
+
+  &__radio-label {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+  }
+
+  // .payment-type__radio-decor
+
+  &__radio-decor {
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
+    background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='15' cy='15' r='14.5' fill='white' stroke='%23E1E0E6' /%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  // .payment-type__radio-text
+
+  &__radio-text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 100%;
+    color: var(--white-color);
+  }
+}

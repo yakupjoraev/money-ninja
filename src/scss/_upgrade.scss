@@ -1,0 +1,144 @@
+.upgrade {
+
+
+  .title {
+    margin-bottom: 6px;
+  }
+
+  // .upgrade__head
+
+  &__head {
+    margin-bottom: 20px;
+  }
+
+  // .upgrade__list
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+
+  // .upgrade__item
+
+  &__item {
+    position: relative;
+    z-index: 1;
+    padding: 12px 20px 18px;
+    background-color: #272727;
+    border-radius: 16px;
+    overflow: hidden;
+    background-image: url('../img/icons/task-bg.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  // .upgrade__item-info
+
+  &__item-info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+
+  // .upgrade__item-text
+
+  &__item-text {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--text-color);
+
+    &.red {
+      color: var(--red);
+    }
+  }
+
+  // .upgrade__item-btn
+
+  &__item-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 2px;
+    width: 180px;
+    height: 32px;
+    border: 0;
+    outline: 0;
+    border-radius: 6px;
+    background-color: var(--red);
+
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 100%;
+    text-align: center;
+    color: var(--text-color);
+  }
+
+  // .upgrade__item-picture
+
+  &__item-picture {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    img {
+      max-width: 160px;
+      width: auto;
+      height: auto;
+    }
+  }
+
+  // .upgrade__item-types
+  &__item-types {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  // .upgrade__item-type
+
+  &__item-type {
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+  }
+
+  // .upgrade__item-type-text
+
+  &__item-type-text {
+    font-size: 10px;
+    line-height: 100%;
+    color: var(--white-color);
+
+    &.red {
+      color: var(--red);
+    }
+  }
+
+  // .upgrade__item-block
+
+  &__item-block {
+    width: fit-content;
+    padding: 3px 10px;
+    border-radius: 4px;
+    background: #3c3c3c;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 100%;
+    color: var(--white-color);
+  }
+
+}
+
+.upgrade--masters {
+
+  .upgrade__item-picture img {
+    margin-bottom: -10px;
+  }
+}

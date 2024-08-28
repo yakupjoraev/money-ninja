@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Index</title>
+  <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body class="main__body">
+  <div class="wrapper">
+    <!-- Header -->
+    @@include('./html/_header.html')
+
+    <!-- Main Page -->
+    <main>
+      <div class="home">
+        <div class="home__head">
+          <div class="home__tokens">
+            <img width="40" height="40" src="./img/attention-token.png" alt="token icon">
+
+            <p class="home__tokens-sum">149,000</p>
+          </div>
+        </div>
+
+        <div class="home__main">
+          <p class="home__main-text">Swipe to <br /> earn!</p>
+
+          <div class="home__main-cirkle">
+            <picture>
+              <source srcset="./img/icons/main-cirkle.webp 1x, ./img/icons/main-cirkle@2x.webp 2x" type="image/webp">
+              <source srcset="./img/icons/main-cirkle.png 1x, ./img/icons/main-cirkle@2x.png 2x" type="image/png">
+              <img class="home__main-cirkle-icon" src="./img/icons/main-cirkle.png"
+                srcset="./img/icons/main-cirkle@2x.png" alt="picture">
+            </picture>
+          </div>
+          <div class="home__main-ninja">
+            <picture>
+              <source srcset="./img/icons/main-ninja-icon.webp 1x, ./img/icons/main-ninja-icon@2x.webp 2x"
+                type="image/webp">
+              <source srcset="./img/icons/main-ninja-icon.png 1x, ./img/icons/main-ninja-icon@2x.png 2x"
+                type="image/png">
+              <img class="home__main-ninja-icon" src="./img/icons/main-ninja-icon.png"
+                srcset="./img/icons/main-ninja-icon@2x.png" alt="picture">
+            </picture>
+          </div>
+        </div>
+
+        <div class="home__footer">
+
+          <div class="home__column">
+            <picture>
+              <source srcset="./img/icons/energy.webp 1x, ./img/icons/energy@2x.webp 2x" type="image/webp">
+              <source srcset="./img/icons/energy.png 1x, ./img/icons/energy@2x.png 2x" type="image/png">
+              <img class="home__column-icon" width="40" height="40" src="./img/icons/energy.png"
+                srcset="./img/icons/energy@2x.png" alt="picture">
+            </picture>
+
+            <div class="home__column-text">
+              <span>750</span>
+              <span> / </span>
+              <span>5000</span>
+            </div>
+          </div>
+
+          <div class="home__column">
+            <picture>
+              <source srcset="./img/icons/scroll.webp 1x, ./img/icons/scroll@2x.webp 2x" type="image/webp">
+              <source srcset="./img/icons/scroll.png 1x, ./img/icons/scroll@2x.png 2x" type="image/png">
+              <img class="home__column-icon" width="48" height="48" src="./img/icons/scroll.png"
+                srcset="./img/icons/scroll@2x.png" alt="picture">
+            </picture>
+
+            <div class="home__column-text">
+              <span>Boosts</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    @@include('./html/_footer.html')
+  </div>
+
+</body>
+
+<script src="./js/scripts.min.js"></script>
+
+</html>

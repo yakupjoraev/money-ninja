@@ -1,0 +1,28 @@
+// Global SCSS-files imports
+@import './fonts';
+@import './vars';
+@import './reset';
+@import './global';
+@import './base';
+
+
+// Sections or Pages SCSS-files imports
+@import './header';
+@import './start';
+@import './transactions-history';
+@import './table';
+@import './halving';
+@import './wallet';
+@import './settings';
+@import './leaderboard';
+@import './whitepaper';
+@import './roadmap';
+@import './upgrade';
+@import './tasks';
+@import './home';
+@import './crypto-pay';
+@import './upgrade-detail';
+@import './footer';
+
+// Libs
+// @import './libs/swiper';

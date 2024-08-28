@@ -1,0 +1,90 @@
+.wallet {
+
+  // .wallet__form
+
+  &__form {}
+
+  // .wallet__form-title
+
+  &__form-title {
+    margin-bottom: 10px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 15px;
+    color: var(--text-color);
+  }
+
+  // .wallet__address
+
+  &__address {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 10px;
+  }
+
+  // .wallet__address-input
+
+  &__address-input {
+    padding: 20px 60px 20px 24px;
+    width: 100%;
+    height: 60px;
+    background-color: #1e1e1e;
+    outline: 0;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    color: var(--text-2);
+
+    &::placeholder {
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 120%;
+      color: var(--text-2);
+    }
+
+    &:active,
+    &:focus {
+      border-color: var(--red);
+    }
+  }
+
+  // .wallet__address-btn
+
+  &__address-btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background: #272727;
+  }
+
+  // .wallet__btn
+
+  &__btn {
+    margin-bottom: 20px;
+  }
+
+  // .wallet__link
+
+  &__link {
+    display: flex;
+    width: fit-content;
+    margin: 0 auto;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    text-align: center;
+    color: var(--red);
+  }
+}

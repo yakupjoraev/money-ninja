@@ -1,0 +1,74 @@
+.whitepaper {
+
+  // .whitepaper__list
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    list-style: none;
+    counter-reset: item;
+  }
+
+  // .whitepaper__item
+
+  &__item {
+    counter-increment: item;
+
+    &>h4::before {
+      content: counters(item, ".") ". ";
+      font-weight: bold;
+    }
+
+    ol {
+      counter-reset: subitem;
+      margin-left: 20px;
+      margin-top: 20px;
+      /* Отступ для вложенного списка */
+    }
+
+    ol .whitepaper__item {
+      counter-increment: subitem;
+    }
+
+    ol>li> {
+      .text-grey {
+        padding-left: 30px;
+      }
+    }
+
+    ol>li>h4 {
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 130%;
+      color: var(--text-color);
+    }
+
+    ol>li>h4::before {
+      content: counter(item) "."counter(subitem) ". ";
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 130%;
+      color: var(--text-color);
+    }
+
+    .text-grey {
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+  }
+
+  // .whitepaper__label
+
+  &__label {
+    display: flex;
+    column-gap: 4px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 130%;
+    color: var(--text-color);
+  }
+}

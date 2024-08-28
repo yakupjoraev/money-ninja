@@ -1,0 +1,23 @@
+.halving {
+  margin: 10px 0;
+
+  .block {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+  }
+
+  // .halving__texts
+
+  &__texts {}
+
+  // .halving__pic
+
+  &__pic {
+    margin-left: -24px;
+    margin-right: -24px;
+    width: calc(100% + 48px);
+    max-width: calc(100% + 48px);
+    height: 378px;
+  }
+}

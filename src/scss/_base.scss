@@ -1,0 +1,115 @@
+.wrapper {
+  min-height: 100dvh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  // min-height: calc(100vh - 140px);
+  padding: 20px 16px 100px;
+  // border-radius: 16px 16px 0 0;
+  background-color: var(--black-color);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: image-set(url("../img/bg/bg.webp") 1x type("image/webp"), url("../img/bg/bg.png") 1x, url("../img/bg/bg@2x.webp") 2x type("image/webp"), url("../img/bg/bg@2x.png") 2x);
+  background-image: -webkit-image-set(url("../img/bg/bg.webp") 1x type("image/webp"), url("../img/bg/bg.png") 1x, url("../img/bg/bg@2x.webp") 2x type("image/webp"), url("../img/bg/bg@2x.png") 2x);
+
+  &--pb-0 {
+    padding-bottom: 0;
+  }
+
+  &--not-bg {
+    background-image: none;
+  }
+
+  main {
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 24px 16px;
+  border: 2px solid #1f1d16;
+  border-radius: 16px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.9) 100%);
+
+  @media (max-width: 360px) {
+    padding: 20px 16px;
+  }
+}
+
+.title {
+  margin-bottom: 24px;
+  font-family: var(--second-family);
+  font-weight: 400;
+
+  font-size: 28px;
+  color: var(--text-color);
+}
+
+.text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: var(--text-color);
+
+  a {
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: var(--text-color);
+  }
+}
+
+.text-grey {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 130%;
+  color: var(--text-2);
+
+  a {
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: var(--text-2);
+  }
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  background-color: var(--red);
+
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+  text-align: center;
+  color: var(--text-color);
+
+  &--fixed {
+    position: fixed;
+    z-index: 2;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 40px);
+  }
+
+  &--white {
+    background-color: var(--white-color);
+    color: #181818;
+  }
+}

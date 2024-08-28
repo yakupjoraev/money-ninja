@@ -1,0 +1,130 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 70dvh;
+  margin-top: 14px;
+
+  // .home__head
+
+  &__head {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  // .home__tokens
+
+  &__tokens {
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
+    justify-content: center;
+  }
+
+  // .home__tokens-sum
+
+  &__tokens-sum {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: var(--white-color);
+  }
+
+  // .home__main
+
+  &__main {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 20px;
+  }
+
+  // .home__main-text
+
+  &__main-text {
+    position: absolute;
+    z-index: 1;
+    top: 40px;
+    left: 10px;
+    transform: rotate(-20deg);
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+  }
+
+  // .home__main-cirkle
+
+  &__main-cirkle {
+    max-width: 380px;
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  // .home__main-cirkle-icon
+
+  &__main-cirkle-icon {
+    max-width: 100%;
+    width: 100%;
+    hyphens: auto;
+  }
+
+  // .home__main-ninja
+
+  &__main-ninja {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  // .home__main-ninja-icon
+
+  &__main-ninja-icon {}
+
+  // .home__footer
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 20px;
+  }
+
+  // .home__column
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    align-items: center;
+  }
+
+  // .home__column-icon
+
+  &__column-icon {
+    object-fit: cover;
+  }
+
+  // .home__column-text
+
+  &__column-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 2px;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+    text-align: center;
+    color: var(--white-color);
+  }
+}

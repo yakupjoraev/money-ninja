@@ -1,0 +1,49 @@
+<div class="form__file">
+  <label class="form__file-label" for="customFileInput">
+    <img src="./img/icons/file-input.svg" alt="icon file-input">
+
+    <span data-custom-file-label>Прикрепить файл</span>
+  </label>
+  <input type="file" id="customFileInput" style="display: none;" onchange="updateFileName(this)" data-custom-file-input>
+</div>
+
+<style>
+  .form__file-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+    padding: 10px;
+    border-radius: 3px;
+    border: 2px solid var(--primary-color);
+    background-color: var(--white-color);
+
+    color: #272733;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+</style>
+
+<script>
+  function updateFileName(input) {
+    const fileInput = document.querySelector('[data-custom-file-input]');
+
+    if (!fileInput) {
+      return null
+    }
+
+    const fileLabel = document.querySelector('[ data-custom-file-label]');
+
+    if (fileInput.files.length > 0) {
+      const fileName = fileInput.files[0].name;
+      // Изменяем текст на имя файла (или на название товара, если это то, что вам нужно)
+      fileLabel.textContent = fileName;
+    } else {
+      // Возвращаем исходный текст, если файл не выбран
+      fileLabel.textContent = 'Прикрепить файл';
+    }
+  }
+</script>

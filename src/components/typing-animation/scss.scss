@@ -1,0 +1,37 @@
+  // .international-team__title
+
+  .international-team__title {
+    font-family: var(--font4);
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 120%;
+    color: var(--white);
+
+    @media (max-width: $breakpoint1450) {
+      font-size: 32px;
+    }
+
+    @media (max-width: $breakpoint992) {
+      font-size: 28px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      font-size: 24px;
+    }
+  }
+
+  .green-color {
+    color: var(--green);
+  }
+  
+  .typing-animation {
+    // white-space: pre-wrap;
+    overflow: hidden;
+    position: relative;
+    // font-family: 'Courier New', Courier, monospace;
+    // border: 1px solid #ccc;
+    // padding: 10px;
+    // box-sizing: border-box;
+    display: inline-block;
+    /* This ensures the height calculation is accurate */
+  }

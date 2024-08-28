@@ -1,0 +1,111 @@
+.crypto-pay {
+
+  // .crypto-pay__head
+
+  &__head {
+    margin-bottom: 40px;
+
+    .title {
+      margin-bottom: 10px;
+    }
+  }
+
+  // .crypto-pay__qr
+
+  &__qr {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+
+    img {
+      height: auto;
+    }
+  }
+
+  // .crypto-pay__address
+
+  &__address {
+    overflow: hidden;
+  }
+
+  // .crypto-pay__address-input
+
+  &__address-input {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    line-height: 100%;
+    color: var(--white-color);
+  }
+
+  // .crypto-pay__main
+
+  &__main {}
+
+  // .crypto-pay__rows
+
+  &__rows {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    margin-bottom: 28px;
+  }
+
+  // .crypto-pay__row
+
+  &__row {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+  }
+
+  // .crypto-pay__label
+
+  &__label {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 100%;
+    color: var(--white-color);
+  }
+
+  // .crypto-pay__item
+
+  &__item {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    padding: 8px 16px 8px 20px;
+    min-height: 50px;
+  }
+
+  // .crypto-pay__item-icon
+
+  &__item-icon {}
+
+  // .crypto-pay__item-text
+
+  &__item-text {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    color: var(--white-color);
+  }
+
+  // .crypto-pay__item-arrow
+
+  &__item-arrow {
+    margin-left: auto;
+    margin-bottom: 4px;
+  }
+}
