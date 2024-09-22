@@ -22,6 +22,10 @@
     .title {
       font-size: 48px;
       text-align: center;
+
+      &--mini {
+        font-size: 28px;
+      }
     }
 
     &--mini {
@@ -222,5 +226,23 @@
     font-size: 15px;
     line-height: 100%;
     color: var(--white-color);
+  }
+}
+
+
+.upgrade-detail__head--start-battle {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  margin-bottom: 74px;
+
+  .title {
+    margin-bottom: 0;
+  }
+
+  .text {
+    text-align: center;
+    max-width: 240px;
+    margin: 0 auto;
   }
 }

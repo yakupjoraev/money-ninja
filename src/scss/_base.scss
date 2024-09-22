@@ -16,6 +16,10 @@
     padding-bottom: 0;
   }
 
+  &--not-padding {
+    padding: 0 16px;
+  }
+
   &--not-bg {
     background-image: none;
   }
@@ -38,6 +42,10 @@
   border-radius: 16px;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.9) 100%);
 
+  &--large {
+    padding: 24px 46px;
+  }
+
   @media (max-width: 360px) {
     padding: 20px 16px;
   }
@@ -58,6 +66,10 @@
   font-size: 16px;
   line-height: 130%;
   color: var(--text-color);
+
+  &--center {
+    text-align: center;
+  }
 
   a {
     font-weight: 700;

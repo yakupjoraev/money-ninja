@@ -1,0 +1,143 @@
+.slider-container {
+  margin: 40px 0 68px;
+  overflow: hidden;
+
+
+  &--not-hidden {
+    overflow: visible;
+
+    .main-slider {
+      overflow: visible;
+    }
+  }
+}
+
+.main-slider {
+
+
+  // .main-slider__wrapper
+
+  &__wrapper {}
+
+  // .main-slider__slide
+
+  &__slide {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 14px 12px;
+    background-color: #1c1c1c;
+
+    &::before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 140px;
+      height: 140px;
+      border-radius: 100%;
+      background-color: var(--red);
+      filter: blur(70px);
+      user-select: none;
+      pointer-events: none;
+    }
+  }
+
+  // .main-slider__slide-inner
+
+  &__slide-inner {
+    padding: 14px 20px 18px;
+    border: 1px solid var(--red);
+    border-radius: 10px;
+  }
+
+  // .main-slider__slide-head
+
+  &__slide-head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    column-gap: 12px;
+  }
+
+  // .main-slider__slide-info
+
+  &__slide-info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+  }
+
+  // .main-slider__slide-name
+
+  &__slide-name {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 32px;
+    color: #fcfcfc;
+  }
+
+  // .main-slider__slide-type
+
+  &__slide-type {
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+  }
+
+  // .main-slider__slide-type-text
+
+  &__slide-type-text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 100%;
+    color: var(--white-color);
+  }
+
+  // .main-slider__slide-type-text-red
+
+  &__slide-type-text-red {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 100%;
+    color: var(--red);
+  }
+
+  // .main-slider__slide-lvl
+
+  &__slide-lvl {}
+
+  // .main-slider__slide-content
+
+  &__slide-content {}
+
+  // .main-slider__slide-picture
+
+  &__slide-picture {}
+
+  // .main-slider__slide-footer
+
+  &__slide-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 12px;
+  }
+
+  // .main-slider__slide-text
+
+  &__slide-text {
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    color: var(--white-color);
+  }
+}
