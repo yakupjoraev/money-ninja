@@ -44,9 +44,10 @@
   // .upgrade__item-text
 
   &__item-text {
-    font-family: var(--font-family);
+    font-family: var(--second-family);
     font-weight: 500;
-    font-size: 16px;
+    font-size: 24px;
+    line-height: 100%;
     color: var(--text-color);
 
     &.red {
@@ -123,6 +124,11 @@
   // .upgrade__item-block
 
   &__item-block {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 4px;
+    row-gap: 4px;
     width: fit-content;
     padding: 3px 10px;
     border-radius: 4px;

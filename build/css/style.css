@@ -249,6 +249,10 @@ body.locked {
   color: var(--text-color);
 }
 
+.second-font {
+  font-family: var(--second-family);
+}
+
 .text-grey {
   font-family: var(--font-family);
   font-weight: 400;
@@ -365,6 +369,10 @@ body.locked {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.user__texts {
+  width: 100%;
 }
 
 .user__name {
@@ -1279,9 +1287,10 @@ body.locked {
 }
 
 .upgrade__item-text {
-  font-family: var(--font-family);
+  font-family: var(--second-family);
   font-weight: 500;
-  font-size: 16px;
+  font-size: 24px;
+  line-height: 100%;
   color: var(--text-color);
 }
 
@@ -1369,6 +1378,18 @@ body.locked {
 }
 
 .upgrade__item-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-column-gap: 4px;
+     -moz-column-gap: 4px;
+          column-gap: 4px;
+  row-gap: 4px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -1818,6 +1839,10 @@ body.locked {
   color: var(--red);
 }
 
+.main-slider__slide-picture {
+  max-width: 100%;
+}
+
 .main-slider__slide-footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1856,6 +1881,7 @@ body.locked {
 
 .crypto-pay__head .title {
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .crypto-pay__qr {
