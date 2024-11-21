@@ -118,7 +118,15 @@
   // .main-slider__slide-picture
 
   &__slide-picture {
-    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    max-width: 240px;
+
+    img {
+
+      max-width: 100%;
+
+    }
   }
 
   // .main-slider__slide-footer
